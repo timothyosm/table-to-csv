@@ -1,3 +1,13 @@
+export default function htmlTableToCsv(tableId: string): void {
+  const csv = getCsvString(tableId);
+  const file = new Blob([csv], {type: 'text/csv'});
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(file);
+  link.download = 'gradebook.csv';
+  link.click();
+}
+
+
 function getTable(tableId: string): HTMLTableElement {
   return document.getElementById(tableId) as HTMLTableElement;
 }
