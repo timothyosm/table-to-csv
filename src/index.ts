@@ -1,9 +1,9 @@
-export default function htmlTableToCsv(tableId: string): void {
+export default function htmlTableToCsv(tableId: string, name: string): void {
   const csv = getCsvString(tableId);
   const file = new Blob([csv], {type: 'text/csv'});
   const link = document.createElement('a');
   link.href = URL.createObjectURL(file);
-  link.download = 'gradebook.csv';
+  link.download = `${name}.csv`;
   link.click();
 }
 
