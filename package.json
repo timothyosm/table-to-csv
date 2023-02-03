@@ -1,6 +1,6 @@
 {
   "name": "html-table-to-csv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This NPM package exports a CSV string from an HTML table. The function takes one parameter tableId which is a string representing the id of the table in the HTML document.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -21,8 +21,12 @@
     "url": "git+https://github.com/timothyosm/table-to-csv"
   },
   "keywords": [
-    "boilerplate",
-    "typescript"
+    "HTML",
+    "typescript",
+    "Table",
+    "CSV",
+    "Export",
+    "download"
   ],
   "author": "Timothy Osmond",
   "license": "MIT",
